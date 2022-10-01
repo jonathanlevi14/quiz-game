@@ -1,6 +1,7 @@
 :root {
 --headfoot: green;
 --headfootfont: brown;
+--button-color:darkgreen;
 
 }
 
@@ -43,7 +44,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  
 }
 
 section{
@@ -57,36 +58,56 @@ section{
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  /* padding: 15px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 5px;
- 
   }
 
+.start-button {
+  display: block;
+  width: 150px;
+  height: 50px;
+  padding-top: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 1000;
+  }
 #button2:hover {
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .answer-buttons > button{
-  color: green;
+  color: var(button-color);
   min-width: 150px;
+  height: 25px;
+  margin: 5px;
+}
+
+#countdown {
+  margin: 25px;
+  background-color: lightgrey;
 }
 
 footer {
   width: 100%;
   height: 5vh;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
   justify-content: space-between;
   background-color: var(--headfoot);
+  position: absolute;
+  bottom:0;
+
 }
 
 footer h3 {
   color: var(--headfootfont);
-  margin: auto
+  margin: auto;
+ 
 }
 
