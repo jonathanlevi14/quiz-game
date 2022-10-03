@@ -1,7 +1,7 @@
 :root {
---headfoot: green;
---headfootfont: brown;
---button-color:darkgreen;
+--headfoot: limegreen;
+--headfootfont: black;
+--button-color:royalblue;
 
 }
 
@@ -15,6 +15,7 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:block;
+  /* background-color: black; */
 }
 
 header {
@@ -80,7 +81,7 @@ section{
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.answer-buttons > button{
+#answer-buttons > button{
   color: var(button-color);
   min-width: 150px;
   height: 25px;
