@@ -1,6 +1,12 @@
+//DONT TOUCH THIS!
+//get the score from local storage 
+var highScore = JSON.parse(window.localStorage.getItem("score"));
+//set var highScore to show on html page
+document.querySelector("span").textContent = highScore
+
 
 //submit button event
-document.querySelector("input").addEventListener("submit", function(event) {
+document.querySelector("#save").addEventListener("click", function(event) {
     event.preventDefault();
   var lastScore = highScore;
   // Save related form data as an object
@@ -8,34 +14,23 @@ document.querySelector("input").addEventListener("submit", function(event) {
     player: initials,
     score:  highScore
   }
-    lastScore.push(loggedScore);
-    localStorage.setItem("lastScore",JSON.stringify(lastScore));
-    return
+  var savedScores = JSON.parse(localStorage.getItem("savedScores"))
+  if (!savedScores) {
+    savedScores = [];
+  }
+  console.log(savedScores)
+    savedScores.push(loggedScore);
+    localStorage.setItem("savedScores",JSON.stringify(savedScores));
 })
 
 
+//render  lastScore to the High scores list
+function saveLastScore() {
+  var newLine = document.createElement("li");
+  newLine.textContent = savedScores.initials;
+  console.log(newLine)
 
-// function saveLastScore() {
-//    };
-
-
-// function renderLastScore() { 
-//   ;
-//   if (lastScore !== null) {
-//     document.querySelector("initials").innerHTML = loggedScore.player;
-//     document.querySelector("mushrooms").innerHTML = loggedScore.score;
-//   }
-// }
-
-
-
-// function renderLastScore() {
-//   var lastScore = JSON.parse(localStorage.getItem("score"))
-//   if (lastScore !== null) {
-//     document.getElementById("Initials").innerHTML = lastscore.player;
-//     document.getElementById("mushrooms").innerHTML = lastscore.score;
-//   }
-// }
+   };
 
 
 
@@ -46,10 +41,11 @@ document.querySelector("input").addEventListener("submit", function(event) {
 
 
 
-//DONT TOUCH THIS!
-//get the score from local storage 
-var highScore = JSON.parse(window.localStorage.getItem("score"));
+
+
+
+
 //print to enter initials section
 document.querySelector("span").textContent = highScore
-
+document.querySelector("#initials-entry").textContent = initials
 
