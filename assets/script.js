@@ -33,7 +33,6 @@ document.querySelector("button#button2").addEventListener("click", (e) => handle
 document.querySelector("button#button3").addEventListener("click", (e) => handleClick(e));
 
 function handleClick(e) {
-  // console.log(e.target.innerHTML);
   i++;
   var buttonName = e.target.innerHTML;
   userAnswers.push(buttonName);
