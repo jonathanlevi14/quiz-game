@@ -10,9 +10,9 @@ var correctAnswers = ["Paul Stamets", "Fungi", "China", "Gregarious"];
 //List of possible choice to each question
 var otherOptions = {
   option1: ["Paul Stamets", "Sundown Hazen", "Brent Neil", "George Toma"],
-  option2: ["a2", "Fungi", "c2", "d2"],
-  option3: ["a3", "b3", "c3", "China"],
-  option4: ["a4", "b4", "Gregarious", "d4"],
+  option2: ["Animal", "Fungi", "Plant", "Mineral"],
+  option3: ["USA", "Indonesia", "India", "China"],
+  option4: ["Troopa", "FunGroup", "Gregarious", "Huddle"],
 };
 
 //SET OF GLOBAL VAR
