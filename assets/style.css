@@ -116,6 +116,17 @@ footer {
 
 }
 
+h3 {
+  max-width: 50%;
+  align-items: center;
+  margin: auto;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 footer h3 {
   color: var(--headfootfont);
   margin: auto;

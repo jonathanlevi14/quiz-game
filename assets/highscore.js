@@ -24,9 +24,16 @@ document.querySelector("#save").addEventListener("click", function(event) {
     localStorage.setItem("savedScores",JSON.stringify(savedScores));
     document.querySelector("#mushrooms").textContent = loggedScore.score;
     document.querySelector("#initials").textContent = loggedScore.player;
-    // for (var i = 0; i < savedScores.value.length; i++) {
-    //   var fungi = savedScores[i]; 
-    // }
-    // document.querySelector("#saved-scored").append(fungi)
+   
+
+var h2 = document.body
+    
+    
+    for (var i = 0; i < savedScores.length; i++) {
+     var highScoreElement = document.createElement("h3")
+    highScoreElement.textContent = savedScores[i].player + "    " + savedScores[i].score;
+    h2.appendChild(highScoreElement)
+    highScore.value = ""
+    }
 })
 
