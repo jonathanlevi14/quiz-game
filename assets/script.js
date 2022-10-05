@@ -27,18 +27,10 @@ var questionNumber;
 
 // //validate selection choice
 // //listen for button selection to execute funtion
-document
-  .querySelector("button#button0")
-  .addEventListener("click", (e) => handleClick(e));
-document
-  .querySelector("button#button1")
-  .addEventListener("click", (e) => handleClick(e));
-document
-  .querySelector("button#button2")
-  .addEventListener("click", (e) => handleClick(e));
-document
-  .querySelector("button#button3")
-  .addEventListener("click", (e) => handleClick(e));
+document.querySelector("button#button0").addEventListener("click", (e) => handleClick(e));
+document.querySelector("button#button1").addEventListener("click", (e) => handleClick(e));
+document.querySelector("button#button2").addEventListener("click", (e) => handleClick(e));
+document.querySelector("button#button3").addEventListener("click", (e) => handleClick(e));
 
 function handleClick(e) {
   // console.log(e.target.innerHTML);
